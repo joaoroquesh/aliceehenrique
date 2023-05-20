@@ -110,7 +110,7 @@ p{
   &:hover{
     color: $light!important;
     background-color:$primary;
-    border:2px solid $primary-dark!important;
+    border:2px solid $primary!important;
     
   }
   &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
@@ -191,7 +191,7 @@ p{
     }
     .logo-site{
       height: 35px;
-
+      width: auto;
       @media (max-width:400px) {
         height: 30px;
       }
@@ -256,7 +256,10 @@ p{
     margin-top: -100px;
     position: relative;
     color: $light;
-    font-size: 1.5rem;
+
+    .bigger{
+      font-size: 1.5rem;
+    }
 
     &.bg-down{
       //position:absolute;
@@ -274,29 +277,27 @@ p{
     color: $light;
 
     .plant{
-      max-width: 90px;
-    }
-    .faltam{
-      background-image: url(../images/faltam.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      padding-bottom: 3.5rem!important;
+      max-width: 200px;
+      width: 100%;
     }
 
     .time{
       display: flex;
-      .butler{
+      .Brown{
         margin: 0 6px 0 12px;
       }
     }
     
   }
+
   #content{
     .card-btn{
       margin-top: 0.75rem;
     }
-    #cerimonia{
+    #evento{
+      scroll-margin-top: 100px;
+    }
+    .card-duo{
       min-height: 350px;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -316,13 +317,26 @@ p{
           }
         }
 
-        &.igreja{
-          background-image: url(../images/igreja.jpg);
+        &.evento{
+          background-image: url(../images/navaranda.jpg);
           width: 50%;
+          background-size: cover;
+          background-position: top;
           @media (max-width:767px) {
             width: 100%;
             height: auto;
-            min-height: 300px;
+            min-height: 350px;
+          }
+        }
+        &.traje{
+          background-image: url(../images/dress.jpg);
+          width: 50%;
+          background-size: cover;
+          background-position: top;
+          @media (max-width:767px) {
+            width: 100%;
+            height: auto;
+            min-height: 350px;
           }
         }
       }
@@ -331,7 +345,6 @@ p{
         width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         @media (max-width:767px) {
           width: 100%;
           background-size: 110%;

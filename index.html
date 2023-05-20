@@ -35,7 +35,7 @@
 
 <body>
 
-<section id="tj">
+
 
   <section id="main" >
     
@@ -45,8 +45,8 @@
           <div class="col">
             <nav id="menuColor" class="navbar navbar-expand-lg navbar-light">
               <a href="" class="navbar-brand d-flex">
-                <img id="imgMenu" src="images/logo-site.svg" width="auto" class="logo-site align-top">
-                <img id="imgMenuDark" src="images/logo-site-w.svg" width="auto" class="d-none logo-site align-top">
+                <img id="imgMenu" src="images/logo-site.svg" class="logo-site align-top">
+                <img id="imgMenuDark" src="images/logo-site-w.svg" class="d-none logo-site align-top">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -83,7 +83,7 @@
     <section id="frase" class="bg-down">
       <div class="text-center bg py-4" >
         <div >
-          <p class="Brown" data-aos="fade-up">
+          <p class="bigger Brown" data-aos="fade-up">
               “Se você vier pro que der e vier comigo” 
           </p>
           <p class="Callem" data-aos="fade-up">
@@ -96,30 +96,33 @@
     <section id="count">
       <div class="container py-4">
         <div class="row text-center justify-content-center">
-            <div class="col-sm-2 align-self-center text-left" data-aos="fade-left">
+            <div class="col-md-3 align-self-center text-left" data-aos="fade-left">
               <img src="images/planta.png" class="plant">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-8 p-5 faltam align-self-center" data-aos="fade-up">
-              <p>Faltam</p>
+            <div class="col-lg-4 col-md-6 col-sm-8 p-md-5 align-self-center" data-aos="fade-up">
+              <p class="mt-2">Faltam</p>
               <h1 id="days" class="Brown"></h1>
-              <p>dias</p>
+              <p class="mb-0">dias</p>
             </div>
-            <div class="col-sm-2 align-self-center text-right" data-aos="fade-right">
+            <div class="col-md-3 align-self-center text-right" data-aos="fade-right">
               <img src="images/planta.png" class="plant">
             </div>
          </div>
-         <div class="row py-3 justify-content-center align-items-center flex-column flex-sm-row">
-          <div class="time">
-            <h4 id="hours" class="Brown"></h4>
-            <p>horas</p>
-          </div>
-          <div class="time">
-            <h4 id="minutes" class="Brown"></h4>
-            <p>minutos</p>
-          </div>
-          <div class="time">
-            <h4 id="seconds" class="Brown"></h4>
-            <p>segundos</p>
+         <div class="row py-3 justify-content-center flex-column flex-sm-row">
+          <div class="col-10 d-flex justify-content-center align-items-center">
+            <div class="time">
+              <h4 id="hours" class="Brown"></h4>
+              <p>horas</p>
+            </div>
+            <div class="time">
+              <h4 id="minutes" class="Brown"></h4>
+              <p>minutos</p>
+            </div>
+            <div class="time">
+              <h4 id="seconds" class="Brown"></h4>
+              <p>segundos</p>
+            </div>
+
           </div>
          </div>
       </div>
@@ -128,16 +131,16 @@
     <section id="content">
       <div class="container py-5">
         <div class="row pt-4 justify-content-center">
-          <div class="col-lg-10 col-md-12">
-            <div class="d-flex flex-md-row flex-column " id="cerimonia" data-aos="fade-up">
-                <div class="card-image igreja"> </div>
+          <div class="col-lg-10 col-12">
+            <div class="d-flex flex-md-row flex-column card-duo" id="evento" data-aos="fade-up">
+                <div class="card-image evento"> </div>
                 <div class="card-content">
                   <div class="card-title">
                     <h6 class="tag">
                       O evento
                     </h6>
                     <h2 class="Brown">
-                      Cerimônia Religiosa
+                      Jantar
                     </h2>
                   </div>
 
@@ -146,25 +149,27 @@
                         <span class="mr-2">
                           <i class="fas fa-map-marker-alt"></i>
                         </span>
-                        Paróquia São Judas Tadeu | 908 sul
+                        Restaurante Na Varanda | CLS 408 BL B Loja 23
                       </div>
                       <div class="info my-2">
                         <span class="mr-2">
                           <i class="fas fa-calendar"></i>
                         </span>
-                        25/03/2023
+                        21/07/2023
                       </div>
                       <div class="info my-2">
                         <span class="mr-2">
                           <i class="fas fa-clock"></i>
                         </span>
-                        15h
+                        19h
                       </div>
                   </div>
-
+                  <p>
+                    Estamos muito felizes de compartilhar com pessoas tão queridas esse momento. Nossa celebração será repleta de amor e carinho, porém será algo descontraído e breve, por isso, pedimos que sejam pontuais!
+                  </p>
                   <div class="card-btn text-right">
-                    <a class="btn btn-secondary w-100 click page-cerimonia" href="/cerimonia">
-                      Ver informações do evento
+                    <a href="https://goo.gl/maps/soZoGa2bKYGtHyoY8" class="btn btn-secondary">
+                      Localização
                     </a>
                   </div>
                 </div>
@@ -174,7 +179,41 @@
           </div>
         </div>
 
+        <div class="row pt-4 justify-content-center">
+          <div class="col-lg-10 col-12">
+            <div class="d-flex flex-md-row flex-column card-duo" id="traje" data-aos="fade-up">
+              <div class="card-content">
+                <div class="card-title">
+                  <h6 class="tag">
+                    Traje
+                  </h6>
+                  <h2 class="Brown">
+                    Dress code
+                  </h2>
+                </div>
 
+                <div class="card-text pt-3">
+                  <p>
+                    Nosso casamento será mais descontraído, por isso, indicamos que os convidados estejam de esporte fino.
+                  </p>
+                  <p>
+                    <b>Para Mulheres:</b> saias na altura do joelho ou vestidos longuetes são os mais indicados. Salto de sua preferência. 😊
+                  </p>
+                  <p>
+                    <b>Para Homens:</b> calça e camisa social. Paletó ou blazer é opcional. A gravata está dispensada! Pedimos apenas a gentileza de não ir de jeans claro ou rasgado. 😊
+                  </p>
+                </div>
+                
+              </div>  
+              <div class="card-image traje"> </div>
+                
+
+
+            </div>
+          </div>
+        </div>
+
+      <!--
         <div class="row pt-4 justify-content-center">
           <div class="col-lg-5 col-md-6" data-aos="fade-up">
             <div class="card lista" >
@@ -217,93 +256,7 @@
             </div>
           </div>
         </div>
-
-        <div class="row pt-4 justify-content-center">
-          <div class="col-lg-5 col-md-6 pt-md-0 pt-4 order-2 order-md-1" data-aos="fade-up" data-aos-delay="300">
-            <div class="card pedido">
-              <div class="card-img"></div>
-              <div class="card-content">
-                <div class="card-title">
-                  <h6 class="tag">
-                    Fotos
-                  </h6>
-                  <h2 class="Brown">
-                    O Pedido
-                  </h2>
-                </div>
-                <div class="card-btn text-right">
-                  <a class="btn btn-secondary light click page-pedido" href="/pedido">
-                    Ver fotos
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-6 order-1 order-md-2" data-aos="fade-up">
-            <div class="card padrinhos">
-              <div class="card-img"></div>
-              <div class="card-content">
-                <div class="card-title">
-                  <h6 class="tag">
-                    Conheça
-                  </h6>
-                  <h2 class="Brown">
-                    Padrinhos
-                  </h2>
-                </div>
-                <div class="card-btn text-right">
-                  <a class="btn btn-secondary light click page-padrinhos" href="/conheca-padrinhos">
-                    Conhecer
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row pt-4 justify-content-center">
-          <div class="col-lg-5 col-md-6" data-aos="fade-up">
-            <div class="card dress">
-              <div class="card-img"></div>
-              <div class="card-content">
-                <div class="card-title">
-                  <h6 class="tag">
-                    Traje
-                  </h6>
-                  <h2 class="Brown">
-                    Dress Code
-                  </h2>
-                </div>
-                <div class="card-btn text-right">
-                  <a class="btn btn-secondary light click page-dress" href="/dresscode">
-                    Ver completo
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-6 pt-md-0 pt-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card historia">
-              <div class="card-img"></div>
-              <div class="card-content">
-                <div class="card-title">
-                  <h6 class="tag">
-                    Fotos
-                  </h6>
-                  <h2 class="Brown">
-                    Nossa História
-                  </h2>
-                </div>
-                <div class="card-btn text-right">
-                  <a class="btn btn-secondary light click page-historia" href="/historia">
-                    Ver fotos
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
+      -->
       </div>
     </section>
 
@@ -316,7 +269,7 @@
 
   </section>
 
-</section>
+
 
 <div id="modal"></div>
   <script src="script/jquery.3.5.1.js"></script>

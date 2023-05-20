@@ -99,7 +99,7 @@ p {
 .btn-secondary:hover {
   color: var(--light) !important;
   background-color: var(--primary);
-  border: 2px solid var(--primary-dark) !important;
+  border: 2px solid var(--primary) !important;
 }
 .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.1rem var(--secondary);
@@ -171,6 +171,7 @@ p {
 }
 #menu .logo-site {
   height: 35px;
+  width: auto;
 }
 @media (max-width: 400px) {
   #menu .logo-site {
@@ -235,6 +236,8 @@ p {
   margin-top: -100px;
   position: relative;
   color: var(--light);
+}
+#frase .bigger {
   font-size: 1.5rem;
 }
 #frase.bg-down {
@@ -250,74 +253,85 @@ p {
   color: var(--light);
 }
 #count .plant {
-  max-width: 90px;
-}
-#count .faltam {
-  background-image: url(../images/faltam.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  padding-bottom: 3.5rem !important;
+  max-width: 200px;
+  width: 100%;
 }
 #count .time {
   display: flex;
 }
-#count .time .butler {
+#count .time .Brown {
   margin: 0 6px 0 12px;
 }
 
 #content .card-btn {
   margin-top: 0.75rem;
 }
-#content #cerimonia {
+#content #evento {
+  scroll-margin-top: 100px;
+}
+#content .card-duo {
   min-height: 350px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-#content #cerimonia .card-image {
+#content .card-duo .card-image {
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
-  #content #cerimonia .card-image {
+  #content .card-duo .card-image {
     background-size: 100%;
   }
 }
-#content #cerimonia .card-image:hover {
+#content .card-duo .card-image:hover {
   background-size: auto 110%;
 }
 @media (max-width: 767px) {
-  #content #cerimonia .card-image:hover {
+  #content .card-duo .card-image:hover {
     background-size: 110%;
   }
 }
-#content #cerimonia .card-image.igreja {
-  background-image: url(../images/igreja.jpg);
+#content .card-duo .card-image.evento {
+  background-image: url(../images/navaranda.jpg);
   width: 50%;
+  background-size: cover;
+  background-position: top;
 }
 @media (max-width: 767px) {
-  #content #cerimonia .card-image.igreja {
+  #content .card-duo .card-image.evento {
     width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 350px;
   }
 }
-#content #cerimonia .card-content {
+#content .card-duo .card-image.traje {
+  background-image: url(../images/dress.jpg);
+  width: 50%;
+  background-size: cover;
+  background-position: top;
+}
+@media (max-width: 767px) {
+  #content .card-duo .card-image.traje {
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+  }
+}
+#content .card-duo .card-content {
   padding: 1.5rem;
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 @media (max-width: 767px) {
-  #content #cerimonia .card-content {
+  #content .card-duo .card-content {
     width: 100%;
     background-size: 110%;
   }
 }
-#content #cerimonia .card-content .tag {
+#content .card-duo .card-content .tag {
   text-transform: uppercase;
   font-weight: 200;
   margin-bottom: 8px;
