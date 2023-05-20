@@ -294,10 +294,12 @@ p{
     .card-btn{
       margin-top: 0.75rem;
     }
-    #evento{
-      scroll-margin-top: 100px;
+    .anchor{
+      position: absolute;
+      top: -100px;
     }
     .card-duo{
+      position: relative;
       min-height: 350px;
       border-radius: 10px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
