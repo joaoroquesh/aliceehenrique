@@ -24,6 +24,7 @@ $light:var(--light);
   body {
     font-family: script;
     background-color: $light;
+    background-image: url(../images/bg.jpg);
     color:$primary;
     margin: 0px;
     
@@ -333,12 +334,12 @@ p{
         &.traje{
           background-image: url(../images/dress.jpg);
           width: 50%;
-          background-size: cover;
+          background-size: contain;
           background-position: top;
           @media (max-width:767px) {
             width: 100%;
             height: auto;
-            min-height: 350px;
+            min-height: 263px;
           }
         }
       }
@@ -422,12 +423,49 @@ p{
 
 
 footer{
+  .small{
+    font-size: .9rem;
+    font-weight: bold;
+  }
   a{
-    color: $primary;
+    text-decoration: none;
+    color: $primary!important;
+    position: relative;
 
     &:hover{
-      color: $secondary;
-      text-decoration: none;
+      span{
+      opacity: 1;
+
+      &.jroque{
+        right: -82px;
+      }
+      }
+    }
+
+    span{
+      opacity: 0;
+      transition: all .3s ease-in-out;
+      will-change: opacity;
+      position: absolute;
+      white-space: nowrap;
+      top: 0px;
+      
+      &.jroque{
+        right: -45px;
+      }
+    }
+    svg{
+      height: 30px;
+      margin-top: -3px;
+      fill: $primary;
+      filter: drop-shadow( 0 0 0.1rem $secondary);
+      &:hover{
+        filter: drop-shadow( 0 0 0.3rem $secondary);
+      }
+      &:active{
+        transform: translate(3px, 3px);
+        filter: drop-shadow( 0 0 0.6rem $secondary);
+      }
     }
   }
 }
