@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Callem';
+    src: url('callem-script.ttf') format('ttf'),
+        url('callem-script.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
