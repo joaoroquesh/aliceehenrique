@@ -12,6 +12,8 @@ body {
   font-family: script;
   background-color: var(--light);
   background-image: url(../images/bg.jpg);
+  background-size: contain;
+  background-attachment: fixed;
   color: var(--primary);
   margin: 0px;
 }
@@ -257,11 +259,15 @@ p {
   max-width: 200px;
   width: 100%;
 }
+#count #days {
+  font-size: 5rem;
+}
 #count .time {
   display: flex;
+  margin: 0 6px;
 }
 #count .time .Brown {
-  margin: 0 6px 0 12px;
+  margin: 0 6px 0 0;
 }
 
 #content .card-btn {
@@ -312,7 +318,7 @@ p {
 #content .card-duo .card-image.traje {
   background-image: url(../images/dress.jpg);
   width: 50%;
-  background-size: contain;
+  background-size: cover;
   background-position: top;
 }
 @media (max-width: 767px) {

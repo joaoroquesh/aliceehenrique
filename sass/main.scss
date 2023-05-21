@@ -25,6 +25,8 @@ $light:var(--light);
     font-family: script;
     background-color: $light;
     background-image: url(../images/bg.jpg);
+    background-size: contain;
+    background-attachment: fixed;
     color:$primary;
     margin: 0px;
     
@@ -281,11 +283,15 @@ p{
       max-width: 200px;
       width: 100%;
     }
+    #days{
+      font-size: 5rem;
+    }
 
     .time{
       display: flex;
+      margin: 0 6px;
       .Brown{
-        margin: 0 6px 0 12px;
+        margin: 0 6px 0 0;
       }
     }
     
@@ -334,7 +340,7 @@ p{
         &.traje{
           background-image: url(../images/dress.jpg);
           width: 50%;
-          background-size: contain;
+          background-size: cover;
           background-position: top;
           @media (max-width:767px) {
             width: 100%;
