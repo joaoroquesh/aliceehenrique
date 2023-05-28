@@ -156,6 +156,22 @@ p{
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.center{
+  &-s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-h{
+    display: flex;
+    justify-content: center;
+  }
+  &-v{
+    display: flex;
+    align-items: center;
+  }
+}
 /*
 .modal{
 
@@ -232,6 +248,9 @@ p{
         }
       }
     }
+  }
+  .opacity-0{
+    opacity: 0;
   }
 
   .banner{
