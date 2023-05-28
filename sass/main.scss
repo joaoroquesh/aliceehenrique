@@ -77,59 +77,74 @@ p{
 
 .btn{
   padding: 0.375rem 1.5rem;
-  &:active{
-    transform: translate(3px,3px);
-  }
   &:hover{
     cursor: pointer;
   }
-}
-.btn-primary{
-  transition: all 0.5s ease-in-out;
-  background-color:$primary;
-  border:1px solid $primary;
-  color:$light;
-  &:hover{
-    background-color:$secondary;
-    border:1px solid $secondary;
-    color:$primary;
-  }
-  &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-  box-shadow: 0 0 0 0.2rem $primary-light;
-  }
-  
-  &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
-    color: $light;
-    background-color: $primary-light;
-    border-color: $primary-light;
-  }
-}
 
-.btn-secondary{
-  transition: all 0.5s ease-in-out;
-  background-color:transparent;
-  border:2px solid $primary;
-  color:$primary;
-  &:hover{
-    color: $light!important;
+  &-primary{
+    transition: all 0.5s ease-in-out;
     background-color:$primary;
-    border:2px solid $primary!important;
+    border:1px solid $primary;
+    color:$light!important;
+    &:hover{
+      color:$primary!important;
+      background-color:$secondary;
+      border:1px solid $secondary;
+    }
+    &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0rem $primary-light;
+    }
     
-  }
-  &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
-  box-shadow: 0 0 0 0.1rem $secondary;
-  }
-  
-  &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
-    color: $light!important;
-    background-color: $primary-light;
-    border-color: $primary-light;
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+      color:$light!important;
+      background-color: $primary-light;
+      border-color: $primary-light;
+    }
   }
 
-  &.light{
-    border:2px solid $light;
-    color:$light;
+  &-outline-primary{
+    transition: all 0.5s ease-in-out;
+    background-color:none;
+    border:1px solid $primary;
+    color:$primary!important;
+    &:hover{
+      background-color:$primary;
+      border:1px solid $primary;
+      color:$light!important;
+    }
+    &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0rem $primary-light;
+    }
     
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+      color: $primary!important;
+      background-color: $secondary;
+      border-color: $secondary;
+    }
+  }
+  
+  &-secondary{
+    transition: all 0.5s ease-in-out;
+    background-color:transparent;
+    border:2px solid $primary;
+    color:$primary;
+    &:hover{
+      color: $light!important;
+      background-color:$primary!important;
+      border:2px solid $primary!important;
+      
+    }
+    &:focus, &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0rem $secondary;
+    }
+    
+    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
+      color: $light!important;
+      background-color: $primary-light;
+      border-color: $primary-light;
+    }
+  
+
   }
 }
 
@@ -172,6 +187,25 @@ p{
     align-items: center;
   }
 }
+
+.c-{
+
+  &primary{
+    color: $primary;
+  }
+  &primary-light{
+    color: $primary-light;
+  }
+  &primary-dark{
+    color: $primary-dark;
+  }
+  &secondary{
+    color: $secondary;
+  }
+  &light{
+    color: $light;
+  }
+}
 /*
 .modal{
 
@@ -186,7 +220,18 @@ p{
 }
 */
 
-
+  #presentes{
+    .card-title{
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-text{
+      font-size: .875rem;
+      color: $primary;
+    }
+  }
 
 
   #menu{
@@ -519,7 +564,7 @@ footer{
     resize: none;
     width: 100%;
     text-align: center;
-    height: 30px;
+    height: 100px;
     color: $primary;
 }
 .copy-code{
@@ -530,7 +575,7 @@ footer{
   &.success{
   background-color: $secondary;
   border:2px solid $secondary!important;
-  color: $light!important;
+  color: $primary!important;
   transition: all 0.25s ease-in-out;
   
   i{

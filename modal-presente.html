@@ -1,5 +1,5 @@
 
-
+<!--
     <div class="modal fade" id="modalPresentes" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -17,23 +17,23 @@
         </div>
       </div>
     </div>
-
+  -->
     <div class="modal fade" id="modalPix" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Chave Pix</h5>
+            <h5 class="modal-title" id="title-pix"></h5>
             <button type="button" class="close click modal-closePix" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body text-center">
-            <img src="images/main/qrcode.jpg" class="img-fluid w-50 d-none d-sm-inline">
-            <textarea class="my-3 " id="text-pix" disabled></textarea>
+            <img src="" id="img-pix" class="img-fluid w-50 d-none d-sm-inline">
+            <textarea class="p-3 " id="text-pix" disabled></textarea>
           </div>
           
           <div class="modal-footer">
-            <a type="button" class="btn btn-secondary copy-code click modal-copyPIX" id="copiar" onclick="copyHTML()"><i class="fas fa-check"></i>  Copiar PIX</a>
+            <a type="button" class="btn btn-outline-primary copy-code modal-copyPIX" id="copiar" onclick="copyHTML()"><i class="fas fa-check"></i> PIX Copia e cola</a>
           </div>
           
         </div>
@@ -66,6 +66,37 @@
           setTimeout(copyHtmlSuccess, 3000);
       };
       
+
+  </script>
+
+  <script>
+    // Adicione um event listener para todos os botões com a classe 'click'
+var buttons = document.getElementsByClassName('click');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    var dataImg = this.getAttribute('data-img');
+    var dataText = this.getAttribute('data-text');
+    var dataTitle = this.getAttribute('data-title');
+    
+    // Preenche o src da imagem com o valor do data-img
+    var imgElement = document.getElementById('img-pix');
+    if (imgElement) {
+      imgElement.src = dataImg;
+    }
+    
+    // Preenche o texto do textarea com o valor do data-text
+    var textElement = document.getElementById('text-pix');
+    if (textElement) {
+      textElement.value = dataText;
+    }
+
+    // Preenche o texto do titulo com o valor do data-title
+    var titleElement = document.getElementById('title-pix');
+    if (titleElement) {
+      titleElement.textContent = dataTitle;
+    }
+  });
+}
 
   </script>
 
