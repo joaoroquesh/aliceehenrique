@@ -412,11 +412,11 @@ p{
           background-image: url(../images/presentes.jpg);
           width: 50%;
           background-size: cover;
-          background-position: center;
+          background-position: bottom;
           @media (max-width:767px) {
             width: 100%;
             height: auto;
-            min-height: 470px;
+            min-height: 370px;
           }
         }
         &.evento{
@@ -427,7 +427,7 @@ p{
           @media (max-width:767px) {
             width: 100%;
             height: auto;
-            min-height: 350px;
+            min-height: 370px;
           }
         }
         &.traje{
@@ -438,7 +438,7 @@ p{
           @media (max-width:767px) {
             width: 100%;
             height: auto;
-            min-height: 263px;
+            min-height: 370px;
           }
         }
       }

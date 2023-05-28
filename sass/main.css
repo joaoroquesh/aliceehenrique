@@ -376,13 +376,13 @@ p {
   background-image: url(../images/presentes.jpg);
   width: 50%;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 @media (max-width: 767px) {
   #content .card-duo .card-image.presentes {
     width: 100%;
     height: auto;
-    min-height: 470px;
+    min-height: 370px;
   }
 }
 #content .card-duo .card-image.evento {
@@ -395,7 +395,7 @@ p {
   #content .card-duo .card-image.evento {
     width: 100%;
     height: auto;
-    min-height: 350px;
+    min-height: 370px;
   }
 }
 #content .card-duo .card-image.traje {
@@ -408,7 +408,7 @@ p {
   #content .card-duo .card-image.traje {
     width: 100%;
     height: auto;
-    min-height: 263px;
+    min-height: 370px;
   }
 }
 #content .card-duo .card-content {
