@@ -376,7 +376,7 @@ p {
   background-image: url(../images/historia.jpg);
   width: 50%;
   background-size: cover;
-  background-position: center left;
+  background-position: center;
 }
 @media (max-width: 767px) {
   #content .card-duo .card-image.historia {
