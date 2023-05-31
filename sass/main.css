@@ -385,6 +385,11 @@ p {
     min-height: 490px;
   }
 }
+@media (max-width: 425px) {
+  #content .card-duo .card-image.historia {
+    min-height: 380px;
+  }
+}
 #content .card-duo .card-image.presentes {
   background-image: url(../images/presentes.jpg);
   width: 50%;

@@ -418,6 +418,9 @@ p{
             height: auto;
             min-height: 490px;
           }
+          @media (max-width:425px) {
+            min-height: 380px;
+          }
         }
         &.presentes{
           background-image: url(../images/presentes.jpg);
