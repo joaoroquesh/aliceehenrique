@@ -372,6 +372,19 @@ p {
     background-size: 110%;
   }
 }
+#content .card-duo .card-image.historia {
+  background-image: url(../images/historia.jpg);
+  width: 50%;
+  background-size: cover;
+  background-position: bottom;
+}
+@media (max-width: 767px) {
+  #content .card-duo .card-image.historia {
+    width: 100%;
+    height: auto;
+    min-height: 490px;
+  }
+}
 #content .card-duo .card-image.presentes {
   background-image: url(../images/presentes.jpg);
   width: 50%;

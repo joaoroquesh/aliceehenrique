@@ -407,7 +407,18 @@ p{
             background-size: 110%;
           }
         }
-
+        
+        &.historia{
+          background-image: url(../images/historia.jpg);
+          width: 50%;
+          background-size: cover;
+          background-position: bottom;
+          @media (max-width:767px) {
+            width: 100%;
+            height: auto;
+            min-height: 490px;
+          }
+        }
         &.presentes{
           background-image: url(../images/presentes.jpg);
           width: 50%;
